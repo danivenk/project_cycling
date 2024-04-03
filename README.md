@@ -1,5 +1,5 @@
 # Cycling Project
-(2019 - now)
+(2019 - now)<br>
 This project aims to be able to load gpx files from runkeeper and generate a heatmap.
 The data is expected to be in `.gpx` format inside a `Data/` folder as well as a `Data_Runkeeper-correction/` folder which contains corrected files in `Data_Runkeeper-correction/*/merged/`
 
