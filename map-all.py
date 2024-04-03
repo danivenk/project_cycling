@@ -11,6 +11,9 @@ import haversine
 import gmplot as gm
 import os
 import polyline
+import dotenv
+
+dotenv.load_dotenv()
 
 # Path to current file
 PATH = os.path.dirname(os.path.abspath(__file__))
@@ -58,7 +61,7 @@ lat, lon = zip(*coords)
 
 ## Create empty map with zoom level 16
 mymap = gm.GoogleMapPlotter(min_lat + (max_lat - min_lat) / 2, min_lon + \
-    (max_lon - min_lon) / 2, 16, apikey="AIzaSyAyjorM33q3OJFTVcUOKbddvTTdLxwJZqU")
+    (max_lon - min_lon) / 2, 16, apikey=os.getenv("GOOGLE_KEY"))
 # mymap.scatter(enc_coords, 'blue', size=1, marker=False)
 # for file in range(0, len(loadedfiles)):
 mymap.scatter(lat,lon, 'blue', size=1, marker=False)
