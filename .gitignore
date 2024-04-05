@@ -1,7 +1,9 @@
-/AutoRitData.csv
-/Data
-/Data_Runkeeper-correction
-/autorit.py
+AutoRitData.csv
+Data/*
+!Data/.gitkeep
+Data_Runkeeper-correction/*
+!Data_Runkeeper-correction/.gitkeep
+autorit.py
 map-all.html
 *cpython*
 Loaded.csv
